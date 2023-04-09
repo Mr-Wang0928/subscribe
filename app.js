@@ -14,7 +14,7 @@ async function start() {
     console.log(error)
     process.exit(0)
   }
-
+  console.log("access_token",access_token);
   sendMessage({
     ...params,
     access_token,

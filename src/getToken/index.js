@@ -10,13 +10,13 @@ function getToken(params) {
       if (err) {
         reject(err)
       } else {
-        if (data) {
-          const token = JSON.parse(data)
-          if (token.expires_in > moment().unix()) {
-            resolve(token.access_token)
-            return
-          }
-        }
+        // if (data) {
+        //   const token = JSON.parse(data)
+        //   if (token.expires_in > moment().unix()) {
+        //     resolve(token.access_token)
+        //     return
+        //   }
+        // }
         const appid = params.appid
         const secret = params.secret
         axios
