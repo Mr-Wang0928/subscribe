@@ -30,21 +30,21 @@ async function start() {
     .catch((err) => console.error('发送失败', err))
 }
 
-// setTimeout(()=>{
-//     console.log("send....................");
-//     start()
-// },5000)
-
-
-app.get("/", (req, res) => res.type('html').send(html));
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
-  setTimeout(()=>{
+setTimeout(()=>{
     console.log("send....................");
     start()
-  },5000)
-});
+},5000)
+
+
+// app.get("/", (req, res) => res.type('html').send(html));
+
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}!`)
+  // setTimeout(()=>{
+  //   console.log("send....................");
+  //   start()
+  // },5000)
+// });
 
 
 const html = `
